@@ -2,16 +2,76 @@
 TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'le'
-Slack : -3.000
-TNS   : -3.000
+Type  : Slow 1200mV 85C Model Setup 'SAR:mySAR|saadc_fsm:mySaadc_fsm|state.idle'
+Slack : -1.211
+TNS   : -2.292
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'le'
-Slack : -3.000
-TNS   : -3.000
+Type  : Slow 1200mV 85C Model Setup 'clk'
+Slack : -0.433
+TNS   : -1.420
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'le'
+Type  : Slow 1200mV 85C Model Hold 'clk'
+Slack : 0.144
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'SAR:mySAR|saadc_fsm:mySaadc_fsm|state.idle'
+Slack : 0.732
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk'
 Slack : -3.000
-TNS   : -3.000
+TNS   : -10.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'SAR:mySAR|saadc_fsm:mySaadc_fsm|state.idle'
+Slack : 0.425
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'SAR:mySAR|saadc_fsm:mySaadc_fsm|state.idle'
+Slack : -1.016
+TNS   : -1.919
+
+Type  : Slow 1200mV 0C Model Setup 'clk'
+Slack : -0.309
+TNS   : -0.780
+
+Type  : Slow 1200mV 0C Model Hold 'clk'
+Slack : 0.129
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'SAR:mySAR|saadc_fsm:mySaadc_fsm|state.idle'
+Slack : 0.703
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -10.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'SAR:mySAR|saadc_fsm:mySaadc_fsm|state.idle'
+Slack : 0.447
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'SAR:mySAR|saadc_fsm:mySaadc_fsm|state.idle'
+Slack : -0.214
+TNS   : -0.350
+
+Type  : Fast 1200mV 0C Model Setup 'clk'
+Slack : -0.161
+TNS   : -0.181
+
+Type  : Fast 1200mV 0C Model Hold 'clk'
+Slack : 0.102
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'SAR:mySAR|saadc_fsm:mySaadc_fsm|state.idle'
+Slack : 0.344
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -10.392
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'SAR:mySAR|saadc_fsm:mySaadc_fsm|state.idle'
+Slack : 0.427
+TNS   : 0.000
 
 ------------------------------------------------------------

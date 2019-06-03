@@ -1,5 +1,5 @@
 Flow report for shiftreg
-Mon Jun  3 18:09:53 2019
+Mon Jun  3 18:26:09 2019
 Quartus II 64-Bit Version 14.1.0 Build 186 12/03/2014 SJ Web Edition
 
 
@@ -41,18 +41,18 @@ agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Flow Summary                                                                    ;
 +------------------------------------+--------------------------------------------+
-; Flow Status                        ; Successful - Mon Jun  3 18:09:53 2019      ;
+; Flow Status                        ; Successful - Mon Jun  3 18:26:09 2019      ;
 ; Quartus II 64-Bit Version          ; 14.1.0 Build 186 12/03/2014 SJ Web Edition ;
 ; Revision Name                      ; shiftreg                                   ;
-; Top-level Entity Name              ; latch_1                                    ;
+; Top-level Entity Name              ; AD_SAR                                     ;
 ; Family                             ; Cyclone IV E                               ;
 ; Device                             ; EP4CE22F17C6                               ;
 ; Timing Models                      ; Final                                      ;
-; Total logic elements               ; 8 / 22,320 ( < 1 % )                       ;
-;     Total combinational functions  ; 8 / 22,320 ( < 1 % )                       ;
-;     Dedicated logic registers      ; 0 / 22,320 ( 0 % )                         ;
-; Total registers                    ; 0                                          ;
-; Total pins                         ; 18 / 154 ( 12 % )                          ;
+; Total logic elements               ; 13 / 22,320 ( < 1 % )                      ;
+;     Total combinational functions  ; 11 / 22,320 ( < 1 % )                      ;
+;     Dedicated logic registers      ; 7 / 22,320 ( < 1 % )                       ;
+; Total registers                    ; 7                                          ;
+; Total pins                         ; 21 / 154 ( 14 % )                          ;
 ; Total virtual pins                 ; 0                                          ;
 ; Total memory bits                  ; 0 / 608,256 ( 0 % )                        ;
 ; Embedded Multiplier 9-bit elements ; 0 / 132 ( 0 % )                            ;
@@ -65,7 +65,7 @@ agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 06/03/2019 18:09:11 ;
+; Start date & time ; 06/03/2019 18:25:26 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; shiftreg            ;
 +-------------------+---------------------+
@@ -76,19 +76,19 @@ agreement for further details.
 +-------------------------------------+---------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                                 ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+---------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 0.155959615119057                     ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 0.155959712619195                     ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Vhdl                                  ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (VHDL)                ; <None>        ; --          ; --             ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                    ; --            ; --          ; --             ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                     ; --            ; --          ; --             ;
 ; NOMINAL_CORE_SUPPLY_VOLTAGE         ; 1.2V                                  ; --            ; --          ; --             ;
-; PARTITION_COLOR                     ; 16764057                              ; --            ; latch_1     ; Top            ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING                 ; --            ; latch_1     ; Top            ;
-; PARTITION_NETLIST_TYPE              ; SOURCE                                ; --            ; latch_1     ; Top            ;
+; PARTITION_COLOR                     ; 16764057                              ; --            ; AD_SAR      ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING                 ; --            ; AD_SAR      ; Top            ;
+; PARTITION_NETLIST_TYPE              ; SOURCE                                ; --            ; AD_SAR      ; Top            ;
 ; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                   ; --            ; --          ; --             ;
 ; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW ; --            ; --          ; --             ;
 ; PROJECT_OUTPUT_DIRECTORY            ; output_files                          ; --            ; --          ; --             ;
-; TOP_LEVEL_ENTITY                    ; latch_1                               ; shiftreg      ; --          ; --             ;
+; TOP_LEVEL_ENTITY                    ; AD_SAR                                ; shiftreg      ; --          ; --             ;
 +-------------------------------------+---------------------------------------+---------------+-------------+----------------+
 
 
@@ -97,12 +97,12 @@ agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:20     ; 1.0                     ; 941 MB              ; 00:00:47                           ;
-; Fitter                    ; 00:00:08     ; 1.0                     ; 1019 MB             ; 00:00:07                           ;
-; Assembler                 ; 00:00:01     ; 1.0                     ; 770 MB              ; 00:00:02                           ;
-; TimeQuest Timing Analyzer ; 00:00:02     ; 1.0                     ; 782 MB              ; 00:00:02                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 1027 MB             ; 00:00:01                           ;
-; Total                     ; 00:00:32     ; --                      ; --                  ; 00:00:59                           ;
+; Analysis & Synthesis      ; 00:00:18     ; 1.0                     ; 942 MB              ; 00:00:45                           ;
+; Fitter                    ; 00:00:08     ; 1.0                     ; 1020 MB             ; 00:00:09                           ;
+; Assembler                 ; 00:00:02     ; 1.0                     ; 771 MB              ; 00:00:02                           ;
+; TimeQuest Timing Analyzer ; 00:00:02     ; 1.0                     ; 778 MB              ; 00:00:02                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 1028 MB             ; 00:00:01                           ;
+; Total                     ; 00:00:31     ; --                      ; --                  ; 00:00:59                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
