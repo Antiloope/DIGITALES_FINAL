@@ -1,0 +1,121 @@
+|SAR
+reset_bar => saadc_fsm:mySaadc_fsm.reset_bar
+reset_bar => shiftreg_1:myShiftreg.clr_bar
+reset_bar => approx_reg:myApprox_reg.reset_bar
+soc => saadc_fsm:mySaadc_fsm.soc
+clk => saadc_fsm:mySaadc_fsm.clk
+clk => shiftreg_1:myShiftreg.clk
+clk => approx_reg:myApprox_reg.clk
+comp_in => approx_reg:myApprox_reg.en1
+eoc <= saadc_fsm:mySaadc_fsm.eoc
+result[0] <= or_out_signal[0].DB_MAX_OUTPUT_PORT_TYPE
+result[1] <= or_out_signal[1].DB_MAX_OUTPUT_PORT_TYPE
+result[2] <= or_out_signal[2].DB_MAX_OUTPUT_PORT_TYPE
+result[3] <= or_out_signal[3].DB_MAX_OUTPUT_PORT_TYPE
+result[4] <= or_out_signal[4].DB_MAX_OUTPUT_PORT_TYPE
+result[5] <= or_out_signal[5].DB_MAX_OUTPUT_PORT_TYPE
+result[6] <= or_out_signal[6].DB_MAX_OUTPUT_PORT_TYPE
+result[7] <= or_out_signal[7].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SAR|saadc_fsm:mySaadc_fsm
+clk => state~1.DATAIN
+reset_bar => state~3.DATAIN
+soc => state.DATAB
+soc => Selector0.IN1
+last_bit => Selector0.IN2
+last_bit => Selector1.IN2
+load <= load.DB_MAX_OUTPUT_PORT_TYPE
+en <= en.DB_MAX_OUTPUT_PORT_TYPE
+en2 <= en2.DB_MAX_OUTPUT_PORT_TYPE
+eoc <= eoc.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SAR|shiftreg_1:myShiftreg
+clr_bar => r[0].ACLR
+clr_bar => r[1].ACLR
+clr_bar => r[2].ACLR
+clr_bar => r[3].ACLR
+clr_bar => r[4].ACLR
+clr_bar => r[5].ACLR
+clr_bar => r[6].ACLR
+clr_bar => r[7].ACLR
+load => r.OUTPUTSELECT
+load => r.OUTPUTSELECT
+load => r.OUTPUTSELECT
+load => r.OUTPUTSELECT
+load => r.OUTPUTSELECT
+load => r.OUTPUTSELECT
+load => r.OUTPUTSELECT
+load => r.OUTPUTSELECT
+en => r.OUTPUTSELECT
+en => r.OUTPUTSELECT
+en => r.OUTPUTSELECT
+en => r.OUTPUTSELECT
+en => r.OUTPUTSELECT
+en => r.OUTPUTSELECT
+en => r.OUTPUTSELECT
+en => r.OUTPUTSELECT
+clk => r[0].CLK
+clk => r[1].CLK
+clk => r[2].CLK
+clk => r[3].CLK
+clk => r[4].CLK
+clk => r[5].CLK
+clk => r[6].CLK
+clk => r[7].CLK
+qout[0] <= r[0].DB_MAX_OUTPUT_PORT_TYPE
+qout[1] <= r[1].DB_MAX_OUTPUT_PORT_TYPE
+qout[2] <= r[2].DB_MAX_OUTPUT_PORT_TYPE
+qout[3] <= r[3].DB_MAX_OUTPUT_PORT_TYPE
+qout[4] <= r[4].DB_MAX_OUTPUT_PORT_TYPE
+qout[5] <= r[5].DB_MAX_OUTPUT_PORT_TYPE
+qout[6] <= r[6].DB_MAX_OUTPUT_PORT_TYPE
+qout[7] <= r[7].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SAR|approx_reg:myApprox_reg
+reset_bar => r[0].ACLR
+reset_bar => r[1].ACLR
+reset_bar => r[2].ACLR
+reset_bar => r[3].ACLR
+reset_bar => r[4].ACLR
+reset_bar => r[5].ACLR
+reset_bar => r[6].ACLR
+reset_bar => r[7].ACLR
+load => r.OUTPUTSELECT
+load => r.OUTPUTSELECT
+load => r.OUTPUTSELECT
+load => r.OUTPUTSELECT
+load => r.OUTPUTSELECT
+load => r.OUTPUTSELECT
+load => r.OUTPUTSELECT
+load => r.OUTPUTSELECT
+en1 => process_0.IN0
+en2 => process_0.IN1
+clk => r[0].CLK
+clk => r[1].CLK
+clk => r[2].CLK
+clk => r[3].CLK
+clk => r[4].CLK
+clk => r[5].CLK
+clk => r[6].CLK
+clk => r[7].CLK
+d[0] => r.DATAB
+d[1] => r.DATAB
+d[2] => r.DATAB
+d[3] => r.DATAB
+d[4] => r.DATAB
+d[5] => r.DATAB
+d[6] => r.DATAB
+d[7] => r.DATAB
+qar[0] <= r[0].DB_MAX_OUTPUT_PORT_TYPE
+qar[1] <= r[1].DB_MAX_OUTPUT_PORT_TYPE
+qar[2] <= r[2].DB_MAX_OUTPUT_PORT_TYPE
+qar[3] <= r[3].DB_MAX_OUTPUT_PORT_TYPE
+qar[4] <= r[4].DB_MAX_OUTPUT_PORT_TYPE
+qar[5] <= r[5].DB_MAX_OUTPUT_PORT_TYPE
+qar[6] <= r[6].DB_MAX_OUTPUT_PORT_TYPE
+qar[7] <= r[7].DB_MAX_OUTPUT_PORT_TYPE
+
+

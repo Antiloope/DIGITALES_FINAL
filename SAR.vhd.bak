@@ -1,0 +1,13 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity SAR is
+	port(reset_bar,soc,clk,comp_in : in std_logic;
+		eoc : out std_logic;	
+		result : out std_logic_vector(7 downto 0));
+end entity;
+
+architecture behavior of SAR is
+begin
+	
+end architecture;

@@ -1,0 +1,6 @@
+
+State Machine - |SAR|saadc_fsm:mySaadc_fsm|state
+Name state.shift state.initial state.idle 
+state.idle 0 0 0 
+state.initial 0 1 1 
+state.shift 1 0 1 
