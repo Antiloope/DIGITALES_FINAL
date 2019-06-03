@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Mon Jun  3 17:47:48 2019
+Analysis & Synthesis Status : Successful - Mon Jun  3 18:09:30 2019
 Quartus II 64-Bit Version : 14.1.0 Build 186 12/03/2014 SJ Web Edition
 Revision Name : shiftreg
-Top-level Entity Name : SAR
+Top-level Entity Name : latch_1
 Family : Cyclone IV E
-Total logic elements : 10
-    Total combinational functions : 9
-    Dedicated logic registers : 7
-Total registers : 7
-Total pins : 13
+Total logic elements : 8
+    Total combinational functions : 8
+    Dedicated logic registers : 0
+Total registers : 0
+Total pins : 18
 Total virtual pins : 0
 Total memory bits : 0
 Embedded Multiplier 9-bit elements : 0
