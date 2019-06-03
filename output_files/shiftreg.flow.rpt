@@ -1,5 +1,5 @@
 Flow report for shiftreg
-Mon Jun  3 17:05:21 2019
+Mon Jun  3 17:48:11 2019
 Quartus II 64-Bit Version 14.1.0 Build 186 12/03/2014 SJ Web Edition
 
 
@@ -41,7 +41,7 @@ agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Flow Summary                                                                    ;
 +------------------------------------+--------------------------------------------+
-; Flow Status                        ; Successful - Mon Jun  3 17:05:21 2019      ;
+; Flow Status                        ; Successful - Mon Jun  3 17:48:11 2019      ;
 ; Quartus II 64-Bit Version          ; 14.1.0 Build 186 12/03/2014 SJ Web Edition ;
 ; Revision Name                      ; shiftreg                                   ;
 ; Top-level Entity Name              ; SAR                                        ;
@@ -65,7 +65,7 @@ agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 06/03/2019 17:04:39 ;
+; Start date & time ; 06/03/2019 17:47:29 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; shiftreg            ;
 +-------------------+---------------------+
@@ -76,7 +76,7 @@ agreement for further details.
 +-------------------------------------+---------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                                 ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+---------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 0.155959227917579                     ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 0.155959484918650                     ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Vhdl                                  ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (VHDL)                ; <None>        ; --          ; --             ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                    ; --            ; --          ; --             ;
@@ -97,10 +97,10 @@ agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:20     ; 1.0                     ; 945 MB              ; 00:00:47                           ;
-; Fitter                    ; 00:00:08     ; 1.0                     ; 1019 MB             ; 00:00:08                           ;
-; Assembler                 ; 00:00:01     ; 1.0                     ; 772 MB              ; 00:00:02                           ;
-; TimeQuest Timing Analyzer ; 00:00:02     ; 1.0                     ; 775 MB              ; 00:00:02                           ;
+; Analysis & Synthesis      ; 00:00:19     ; 1.0                     ; 944 MB              ; 00:00:47                           ;
+; Fitter                    ; 00:00:08     ; 1.0                     ; 1022 MB             ; 00:00:08                           ;
+; Assembler                 ; 00:00:02     ; 1.0                     ; 772 MB              ; 00:00:02                           ;
+; TimeQuest Timing Analyzer ; 00:00:02     ; 1.0                     ; 776 MB              ; 00:00:02                           ;
 ; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 1027 MB             ; 00:00:01                           ;
 ; Total                     ; 00:00:32     ; --                      ; --                  ; 00:01:00                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+

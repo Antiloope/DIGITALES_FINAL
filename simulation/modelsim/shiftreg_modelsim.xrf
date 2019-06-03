@@ -7,6 +7,7 @@ source_file = 1, /home/antiloope/Documents/ucc/ElecDigital/PracticoDigitalesFina
 source_file = 1, /home/antiloope/Documents/ucc/ElecDigital/PracticoDigitalesFinal/saadc_fsm.vwf
 source_file = 1, /home/antiloope/Documents/ucc/ElecDigital/PracticoDigitalesFinal/SAR.vhd
 source_file = 1, /home/antiloope/Documents/ucc/ElecDigital/PracticoDigitalesFinal/shiftreg_1.vhd
+source_file = 1, /home/antiloope/Documents/ucc/ElecDigital/PracticoDigitalesFinal/SAR.vwf
 source_file = 1, /home/antiloope/altera/14.1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
 source_file = 1, /home/antiloope/altera/14.1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
 source_file = 1, /home/antiloope/altera/14.1/quartus/libraries/vhdl/ieee/timing_b.vhd

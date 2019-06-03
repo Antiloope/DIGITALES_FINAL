@@ -43,7 +43,7 @@ SIGNAL("clk")
 	PARENT = "";
 }
 
-SIGNAL("clr_bar")
+SIGNAL("comp_in")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -53,7 +53,17 @@ SIGNAL("clr_bar")
 	PARENT = "";
 }
 
-SIGNAL("en")
+SIGNAL("eoc")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
+SIGNAL("reset_bar")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -63,17 +73,7 @@ SIGNAL("en")
 	PARENT = "";
 }
 
-SIGNAL("load")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("qout")
+SIGNAL("result")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = BUS;
@@ -83,84 +83,94 @@ SIGNAL("qout")
 	PARENT = "";
 }
 
-SIGNAL("qout[7]")
+SIGNAL("result[7]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = OUTPUT;
-	PARENT = "qout";
+	PARENT = "result";
 }
 
-SIGNAL("qout[6]")
+SIGNAL("result[6]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = OUTPUT;
-	PARENT = "qout";
+	PARENT = "result";
 }
 
-SIGNAL("qout[5]")
+SIGNAL("result[5]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = OUTPUT;
-	PARENT = "qout";
+	PARENT = "result";
 }
 
-SIGNAL("qout[4]")
+SIGNAL("result[4]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = OUTPUT;
-	PARENT = "qout";
+	PARENT = "result";
 }
 
-SIGNAL("qout[3]")
+SIGNAL("result[3]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = OUTPUT;
-	PARENT = "qout";
+	PARENT = "result";
 }
 
-SIGNAL("qout[2]")
+SIGNAL("result[2]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = OUTPUT;
-	PARENT = "qout";
+	PARENT = "result";
 }
 
-SIGNAL("qout[1]")
+SIGNAL("result[1]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = OUTPUT;
-	PARENT = "qout";
+	PARENT = "result";
 }
 
-SIGNAL("qout[0]")
+SIGNAL("result[0]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = OUTPUT;
-	PARENT = "qout";
+	PARENT = "result";
+}
+
+SIGNAL("soc")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
 }
 
 TRANSITION_LIST("clk")
@@ -177,38 +187,20 @@ TRANSITION_LIST("clk")
 	}
 }
 
-TRANSITION_LIST("clr_bar")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("en")
+TRANSITION_LIST("comp_in")
 {
 	NODE
 	{
 		REPEAT = 1;
 		LEVEL 0 FOR 240.0;
-		LEVEL 1 FOR 620.0;
-		LEVEL 0 FOR 140.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 150.0;
+		LEVEL 1 FOR 140.0;
+		LEVEL 0 FOR 430.0;
 	}
 }
 
-TRANSITION_LIST("load")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 140.0;
-		LEVEL 1 FOR 50.0;
-		LEVEL 0 FOR 810.0;
-	}
-}
-
-TRANSITION_LIST("qout[7]")
+TRANSITION_LIST("eoc")
 {
 	NODE
 	{
@@ -217,7 +209,18 @@ TRANSITION_LIST("qout[7]")
 	}
 }
 
-TRANSITION_LIST("qout[6]")
+TRANSITION_LIST("reset_bar")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 980.0;
+	}
+}
+
+TRANSITION_LIST("result[7]")
 {
 	NODE
 	{
@@ -226,7 +229,7 @@ TRANSITION_LIST("qout[6]")
 	}
 }
 
-TRANSITION_LIST("qout[5]")
+TRANSITION_LIST("result[6]")
 {
 	NODE
 	{
@@ -235,7 +238,7 @@ TRANSITION_LIST("qout[5]")
 	}
 }
 
-TRANSITION_LIST("qout[4]")
+TRANSITION_LIST("result[5]")
 {
 	NODE
 	{
@@ -244,7 +247,7 @@ TRANSITION_LIST("qout[4]")
 	}
 }
 
-TRANSITION_LIST("qout[3]")
+TRANSITION_LIST("result[4]")
 {
 	NODE
 	{
@@ -253,7 +256,7 @@ TRANSITION_LIST("qout[3]")
 	}
 }
 
-TRANSITION_LIST("qout[2]")
+TRANSITION_LIST("result[3]")
 {
 	NODE
 	{
@@ -262,7 +265,7 @@ TRANSITION_LIST("qout[2]")
 	}
 }
 
-TRANSITION_LIST("qout[1]")
+TRANSITION_LIST("result[2]")
 {
 	NODE
 	{
@@ -271,12 +274,32 @@ TRANSITION_LIST("qout[1]")
 	}
 }
 
-TRANSITION_LIST("qout[0]")
+TRANSITION_LIST("result[1]")
 {
 	NODE
 	{
 		REPEAT = 1;
 		LEVEL X FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("result[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("soc")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 140.0;
+		LEVEL 0 FOR 830.0;
 	}
 }
 
@@ -291,7 +314,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "clr_bar";
+	CHANNEL = "reset_bar";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 1;
@@ -300,7 +323,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "en";
+	CHANNEL = "comp_in";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 2;
@@ -309,7 +332,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "load";
+	CHANNEL = "soc";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 3;
@@ -318,7 +341,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "qout";
+	CHANNEL = "result";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 4;
@@ -328,7 +351,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "qout[7]";
+	CHANNEL = "result[7]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 5;
@@ -338,7 +361,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "qout[6]";
+	CHANNEL = "result[6]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 6;
@@ -348,7 +371,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "qout[5]";
+	CHANNEL = "result[5]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 7;
@@ -358,7 +381,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "qout[4]";
+	CHANNEL = "result[4]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 8;
@@ -368,7 +391,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "qout[3]";
+	CHANNEL = "result[3]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 9;
@@ -378,7 +401,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "qout[2]";
+	CHANNEL = "result[2]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 10;
@@ -388,7 +411,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "qout[1]";
+	CHANNEL = "result[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 11;
@@ -398,12 +421,21 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "qout[0]";
+	CHANNEL = "result[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 12;
 	TREE_LEVEL = 1;
 	PARENT = 4;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "eoc";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 13;
+	TREE_LEVEL = 0;
 }
 
 TIME_BAR

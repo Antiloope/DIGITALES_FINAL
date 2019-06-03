@@ -7,15 +7,15 @@ clk => saadc_fsm:mySaadc_fsm.clk
 clk => shiftreg_1:myShiftreg.clk
 clk => approx_reg:myApprox_reg.clk
 comp_in => approx_reg:myApprox_reg.en1
-eoc <= saadc_fsm:mySaadc_fsm.eoc
-result[0] <= or_out_signal[0].DB_MAX_OUTPUT_PORT_TYPE
-result[1] <= or_out_signal[1].DB_MAX_OUTPUT_PORT_TYPE
-result[2] <= or_out_signal[2].DB_MAX_OUTPUT_PORT_TYPE
-result[3] <= or_out_signal[3].DB_MAX_OUTPUT_PORT_TYPE
-result[4] <= or_out_signal[4].DB_MAX_OUTPUT_PORT_TYPE
-result[5] <= or_out_signal[5].DB_MAX_OUTPUT_PORT_TYPE
-result[6] <= or_out_signal[6].DB_MAX_OUTPUT_PORT_TYPE
-result[7] <= or_out_signal[7].DB_MAX_OUTPUT_PORT_TYPE
+eoc << saadc_fsm:mySaadc_fsm.eoc
+result[0] << or_out_signal[0].DB_MAX_OUTPUT_PORT_TYPE
+result[1] << or_out_signal[1].DB_MAX_OUTPUT_PORT_TYPE
+result[2] << or_out_signal[2].DB_MAX_OUTPUT_PORT_TYPE
+result[3] << or_out_signal[3].DB_MAX_OUTPUT_PORT_TYPE
+result[4] << or_out_signal[4].DB_MAX_OUTPUT_PORT_TYPE
+result[5] << or_out_signal[5].DB_MAX_OUTPUT_PORT_TYPE
+result[6] << or_out_signal[6].DB_MAX_OUTPUT_PORT_TYPE
+result[7] << or_out_signal[7].DB_MAX_OUTPUT_PORT_TYPE
 
 
 |SAR|saadc_fsm:mySaadc_fsm
