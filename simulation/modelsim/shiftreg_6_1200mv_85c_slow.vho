@@ -17,7 +17,7 @@
 -- PROGRAM "Quartus II 64-Bit"
 -- VERSION "Version 14.1.0 Build 186 12/03/2014 SJ Web Edition"
 
--- DATE "06/03/2019 18:26:08"
+-- DATE "06/05/2019 19:12:41"
 
 -- 
 -- Device: Altera EP4CE22F17C6 Package FBGA256
@@ -40,9 +40,9 @@ ENTITY 	AD_SAR IS
 	soc : IN std_logic;
 	clk : IN std_logic;
 	comp_in : IN std_logic;
-	eoc : OUT std_logic;
-	AD_result : OUT std_logic_vector(7 DOWNTO 0);
-	digital_out : OUT std_logic_vector(7 DOWNTO 0)
+	eoc : BUFFER std_logic;
+	AD_result : BUFFER std_logic_vector(7 DOWNTO 0);
+	digital_out : BUFFER std_logic_vector(7 DOWNTO 0)
 	);
 END AD_SAR;
 
