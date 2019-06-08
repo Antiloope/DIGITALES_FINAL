@@ -1,6 +1,11 @@
 Flow report for shiftreg
+<<<<<<< HEAD
+Fri Jun 07 18:17:55 2019
+Quartus II 64-Bit Version 14.1.0 Build 186 12/03/2014 SJ Full Version
+=======
 Wed Jun  5 19:21:54 2019
 Quartus II 64-Bit Version 14.1.0 Build 186 12/03/2014 SJ Web Edition
+>>>>>>> 8d436a92879aea4afb293f2f7146206db0661194
 
 
 ---------------------
@@ -38,6 +43,28 @@ agreement for further details.
 
 
 
+<<<<<<< HEAD
++----------------------------------------------------------------------------------+
+; Flow Summary                                                                     ;
++------------------------------------+---------------------------------------------+
+; Flow Status                        ; Successful - Fri Jun 07 18:17:55 2019       ;
+; Quartus II 64-Bit Version          ; 14.1.0 Build 186 12/03/2014 SJ Full Version ;
+; Revision Name                      ; shiftreg                                    ;
+; Top-level Entity Name              ; AD_SAR                                      ;
+; Family                             ; Cyclone IV E                                ;
+; Device                             ; EP4CE22F17C6                                ;
+; Timing Models                      ; Final                                       ;
+; Total logic elements               ; 36 / 22,320 ( < 1 % )                       ;
+;     Total combinational functions  ; 36 / 22,320 ( < 1 % )                       ;
+;     Dedicated logic registers      ; 19 / 22,320 ( < 1 % )                       ;
+; Total registers                    ; 19                                          ;
+; Total pins                         ; 21 / 154 ( 14 % )                           ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0 / 608,256 ( 0 % )                         ;
+; Embedded Multiplier 9-bit elements ; 0 / 132 ( 0 % )                             ;
+; Total PLLs                         ; 0 / 4 ( 0 % )                               ;
++------------------------------------+---------------------------------------------+
+=======
 +---------------------------------------------------------------------------------+
 ; Flow Summary                                                                    ;
 +------------------------------------+--------------------------------------------+
@@ -58,6 +85,7 @@ agreement for further details.
 ; Embedded Multiplier 9-bit elements ; 0                                          ;
 ; Total PLLs                         ; 0                                          ;
 +------------------------------------+--------------------------------------------+
+>>>>>>> 8d436a92879aea4afb293f2f7146206db0661194
 
 
 +-----------------------------------------+
@@ -65,7 +93,11 @@ agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
+<<<<<<< HEAD
+; Start date & time ; 06/07/2019 18:13:05 ;
+=======
 ; Start date & time ; 06/05/2019 19:21:36 ;
+>>>>>>> 8d436a92879aea4afb293f2f7146206db0661194
 ; Main task         ; Compilation         ;
 ; Revision Name     ; shiftreg            ;
 +-------------------+---------------------+
@@ -76,12 +108,44 @@ agreement for further details.
 +-------------------------------------+---------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                                 ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+---------------------------------------+---------------+-------------+----------------+
+<<<<<<< HEAD
+; COMPILER_SIGNATURE_ID               ; 10995770589203.155994198520560        ; --            ; --          ; --             ;
+=======
 ; COMPILER_SIGNATURE_ID               ; 0.155977329627780                     ; --            ; --          ; --             ;
+>>>>>>> 8d436a92879aea4afb293f2f7146206db0661194
 ; EDA_OUTPUT_DATA_FORMAT              ; Vhdl                                  ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (VHDL)                ; <None>        ; --          ; --             ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                    ; --            ; --          ; --             ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                     ; --            ; --          ; --             ;
 ; NOMINAL_CORE_SUPPLY_VOLTAGE         ; 1.2V                                  ; --            ; --          ; --             ;
+<<<<<<< HEAD
+; PARTITION_COLOR                     ; 16764057                              ; --            ; AD_SAR      ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING                 ; --            ; AD_SAR      ; Top            ;
+; PARTITION_NETLIST_TYPE              ; SOURCE                                ; --            ; AD_SAR      ; Top            ;
+; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                   ; --            ; --          ; --             ;
+; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW ; --            ; --          ; --             ;
+; PROJECT_OUTPUT_DIRECTORY            ; output_files                          ; --            ; --          ; --             ;
+; TOP_LEVEL_ENTITY                    ; AD_SAR                                ; shiftreg      ; --          ; --             ;
++-------------------------------------+---------------------------------------+---------------+-------------+----------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                             ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis      ; 00:00:09     ; 1.0                     ; 4840 MB             ; 00:00:20                           ;
+; Fitter                    ; 00:00:07     ; 1.0                     ; 5527 MB             ; 00:00:08                           ;
+; Assembler                 ; 00:00:01     ; 1.0                     ; 4695 MB             ; 00:00:00                           ;
+; TimeQuest Timing Analyzer ; 00:00:03     ; 1.0                     ; 4823 MB             ; 00:00:02                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4672 MB             ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4663 MB             ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4667 MB             ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 4663 MB             ; 00:00:00                           ;
+; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 4667 MB             ; 00:00:01                           ;
+; Total                     ; 00:00:23     ; --                      ; --                  ; 00:00:34                           ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+=======
 ; PARTITION_COLOR                     ; 16764057                              ; --            ; saadc_fsm   ; Top            ;
 ; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING                 ; --            ; saadc_fsm   ; Top            ;
 ; PARTITION_NETLIST_TYPE              ; SOURCE                                ; --            ; saadc_fsm   ; Top            ;
@@ -100,21 +164,49 @@ agreement for further details.
 ; Analysis & Synthesis ; 00:00:18     ; 1.0                     ; 946 MB              ; 00:00:45                           ;
 ; Total                ; 00:00:18     ; --                      ; --                  ; 00:00:45                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
+>>>>>>> 8d436a92879aea4afb293f2f7146206db0661194
 
 
 +----------------------------------------------------------------------------------------+
 ; Flow OS Summary                                                                        ;
+<<<<<<< HEAD
++---------------------------+------------------+-----------+------------+----------------+
+; Module Name               ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
++---------------------------+------------------+-----------+------------+----------------+
+; Analysis & Synthesis      ; DESKTOP-NAJMN9S  ; Windows 7 ; 6.2        ; x86_64         ;
+; Fitter                    ; DESKTOP-NAJMN9S  ; Windows 7 ; 6.2        ; x86_64         ;
+; Assembler                 ; DESKTOP-NAJMN9S  ; Windows 7 ; 6.2        ; x86_64         ;
+; TimeQuest Timing Analyzer ; DESKTOP-NAJMN9S  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; DESKTOP-NAJMN9S  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; DESKTOP-NAJMN9S  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; DESKTOP-NAJMN9S  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; DESKTOP-NAJMN9S  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; DESKTOP-NAJMN9S  ; Windows 7 ; 6.2        ; x86_64         ;
++---------------------------+------------------+-----------+------------+----------------+
+=======
 +----------------------+------------------+----------------+------------+----------------+
 ; Module Name          ; Machine Hostname ; OS Name        ; OS Version ; Processor type ;
 +----------------------+------------------+----------------+------------+----------------+
 ; Analysis & Synthesis ; antiloope        ; Ubuntu 18.04.2 ; 18         ; x86_64         ;
 +----------------------+------------------+----------------+------------+----------------+
+>>>>>>> 8d436a92879aea4afb293f2f7146206db0661194
 
 
 ------------
 ; Flow Log ;
 ------------
 quartus_map --read_settings_files=on --write_settings_files=off shiftreg -c shiftreg
+<<<<<<< HEAD
+quartus_fit --read_settings_files=off --write_settings_files=off shiftreg -c shiftreg
+quartus_asm --read_settings_files=off --write_settings_files=off shiftreg -c shiftreg
+quartus_sta shiftreg -c shiftreg
+quartus_eda --read_settings_files=off --write_settings_files=off shiftreg -c shiftreg
+quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog --write_settings_files=off shiftreg -c shiftreg --vector_source=C:/Users/Leandro/Documents/Facu/4to/DIGITALES_FINAL-master/DIGITALES_FINAL-master/AD_SAR.vwf --testbench_file=C:/Users/Leandro/Documents/Facu/4to/DIGITALES_FINAL-master/DIGITALES_FINAL-master/simulation/qsim/AD_SAR.vwf.vt
+quartus_eda --write_settings_files=off --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=C:/Users/Leandro/Documents/Facu/4to/DIGITALES_FINAL-master/DIGITALES_FINAL-master/simulation/qsim/ shiftreg -c shiftreg
+quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog --write_settings_files=off shiftreg -c shiftreg --vector_source=C:/Users/Leandro/Documents/Facu/4to/DIGITALES_FINAL-master/DIGITALES_FINAL-master/AD_SAR.vwf --testbench_file=C:/Users/Leandro/Documents/Facu/4to/DIGITALES_FINAL-master/DIGITALES_FINAL-master/simulation/qsim/AD_SAR.vwf.vt
+quartus_eda --write_settings_files=off --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=C:/Users/Leandro/Documents/Facu/4to/DIGITALES_FINAL-master/DIGITALES_FINAL-master/simulation/qsim/ shiftreg -c shiftreg
+=======
+>>>>>>> 8d436a92879aea4afb293f2f7146206db0661194
 
 
 

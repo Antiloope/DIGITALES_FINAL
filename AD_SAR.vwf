@@ -340,12 +340,23 @@ TRANSITION_LIST("clk")
 	NODE
 	{
 		REPEAT = 1;
+<<<<<<< HEAD
+		LEVEL 1 FOR 10.0;
+		NODE
+		{
+			REPEAT = 16;
+			LEVEL 0 FOR 30.0;
+			LEVEL 1 FOR 30.0;
+		}
+		LEVEL 0 FOR 30.0;
+=======
 		NODE
 		{
 			REPEAT = 10;
 			LEVEL 0 FOR 50.0;
 			LEVEL 1 FOR 50.0;
 		}
+>>>>>>> 8d436a92879aea4afb293f2f7146206db0661194
 	}
 }
 
@@ -354,7 +365,17 @@ TRANSITION_LIST("comp_in")
 	NODE
 	{
 		REPEAT = 1;
+<<<<<<< HEAD
+		LEVEL 1 FOR 180.0;
+		LEVEL 0 FOR 60.0;
+		LEVEL 1 FOR 60.0;
+		LEVEL 0 FOR 240.0;
+		LEVEL 1 FOR 60.0;
+		LEVEL 0 FOR 240.0;
+		LEVEL 1 FOR 160.0;
+=======
 		LEVEL 0 FOR 1000.0;
+>>>>>>> 8d436a92879aea4afb293f2f7146206db0661194
 	}
 }
 
@@ -444,7 +465,13 @@ TRANSITION_LIST("reset_bar")
 	NODE
 	{
 		REPEAT = 1;
+<<<<<<< HEAD
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 950.0;
+=======
 		LEVEL 1 FOR 1000.0;
+>>>>>>> 8d436a92879aea4afb293f2f7146206db0661194
 	}
 }
 
@@ -453,7 +480,13 @@ TRANSITION_LIST("soc")
 	NODE
 	{
 		REPEAT = 1;
+<<<<<<< HEAD
+		LEVEL 0 FOR 90.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 890.0;
+=======
 		LEVEL 0 FOR 1000.0;
+>>>>>>> 8d436a92879aea4afb293f2f7146206db0661194
 	}
 }
 

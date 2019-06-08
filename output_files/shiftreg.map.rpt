@@ -1,6 +1,11 @@
 Analysis & Synthesis report for shiftreg
+<<<<<<< HEAD
+Fri Jun 07 18:13:15 2019
+Quartus II 64-Bit Version 14.1.0 Build 186 12/03/2014 SJ Full Version
+=======
 Wed Jun  5 19:21:54 2019
 Quartus II 64-Bit Version 14.1.0 Build 186 12/03/2014 SJ Web Edition
+>>>>>>> 8d436a92879aea4afb293f2f7146206db0661194
 
 
 ---------------------
@@ -13,11 +18,21 @@ Quartus II 64-Bit Version 14.1.0 Build 186 12/03/2014 SJ Web Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
+<<<<<<< HEAD
+  8. State Machine - |AD_SAR|SAR:mySAR|saadc_fsm:mySaadc_fsm|state
+  9. User-Specified and Inferred Latches
+ 10. General Register Statistics
+ 11. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 12. Post-Synthesis Netlist Statistics for Top Partition
+ 13. Elapsed Time Per Partition
+ 14. Analysis & Synthesis Messages
+=======
   8. State Machine - |saadc_fsm|state
   9. General Register Statistics
  10. Post-Synthesis Netlist Statistics for Top Partition
  11. Elapsed Time Per Partition
  12. Analysis & Synthesis Messages
+>>>>>>> 8d436a92879aea4afb293f2f7146206db0661194
 
 
 
@@ -41,6 +56,26 @@ agreement for further details.
 
 
 
+<<<<<<< HEAD
++----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                     ;
++------------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Fri Jun 07 18:13:15 2019       ;
+; Quartus II 64-Bit Version          ; 14.1.0 Build 186 12/03/2014 SJ Full Version ;
+; Revision Name                      ; shiftreg                                    ;
+; Top-level Entity Name              ; AD_SAR                                      ;
+; Family                             ; Cyclone IV E                                ;
+; Total logic elements               ; 36                                          ;
+;     Total combinational functions  ; 36                                          ;
+;     Dedicated logic registers      ; 19                                          ;
+; Total registers                    ; 19                                          ;
+; Total pins                         ; 21                                          ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
++------------------------------------+---------------------------------------------+
+=======
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
@@ -59,6 +94,7 @@ agreement for further details.
 ; Embedded Multiplier 9-bit elements ; 0                                          ;
 ; Total PLLs                         ; 0                                          ;
 +------------------------------------+--------------------------------------------+
+>>>>>>> 8d436a92879aea4afb293f2f7146206db0661194
 
 
 +----------------------------------------------------------------------------------------------------------------------+
@@ -67,7 +103,11 @@ agreement for further details.
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                     ; EP4CE22F17C6       ;                    ;
+<<<<<<< HEAD
+; Top-level entity name                                                      ; AD_SAR             ; shiftreg           ;
+=======
 ; Top-level entity name                                                      ; saadc_fsm          ; shiftreg           ;
+>>>>>>> 8d436a92879aea4afb293f2f7146206db0661194
 ; Family name                                                                ; Cyclone IV E       ; Cyclone IV GX      ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
@@ -148,6 +188,84 @@ agreement for further details.
 +----------------------------------------------------------------------------+--------------------+--------------------+
 
 
+<<<<<<< HEAD
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 2           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processor 2            ; < 0.1%      ;
+;     Processors 3-8         ;   0.0%      ;
++----------------------------+-------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                            ;
++----------------------------------+-----------------+-----------------+--------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                                     ; Library ;
++----------------------------------+-----------------+-----------------+--------------------------------------------------------------------------------------------------+---------+
+; approx_reg.vhd                   ; yes             ; User VHDL File  ; C:/Users/Leandro/Documents/Facu/4to/DIGITALES_FINAL-master/DIGITALES_FINAL-master/approx_reg.vhd ;         ;
+; saadc_fsm.vhd                    ; yes             ; User VHDL File  ; C:/Users/Leandro/Documents/Facu/4to/DIGITALES_FINAL-master/DIGITALES_FINAL-master/saadc_fsm.vhd  ;         ;
+; SAR.vhd                          ; yes             ; User VHDL File  ; C:/Users/Leandro/Documents/Facu/4to/DIGITALES_FINAL-master/DIGITALES_FINAL-master/SAR.vhd        ;         ;
+; shiftreg_1.vhd                   ; yes             ; User VHDL File  ; C:/Users/Leandro/Documents/Facu/4to/DIGITALES_FINAL-master/DIGITALES_FINAL-master/shiftreg_1.vhd ;         ;
+; latch_1.vhd                      ; yes             ; User VHDL File  ; C:/Users/Leandro/Documents/Facu/4to/DIGITALES_FINAL-master/DIGITALES_FINAL-master/latch_1.vhd    ;         ;
+; AD_SAR.vhd                       ; yes             ; User VHDL File  ; C:/Users/Leandro/Documents/Facu/4to/DIGITALES_FINAL-master/DIGITALES_FINAL-master/AD_SAR.vhd     ;         ;
++----------------------------------+-----------------+-----------------+--------------------------------------------------------------------------------------------------+---------+
+
+
++---------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                   ;
++---------------------------------------------+-----------------+
+; Resource                                    ; Usage           ;
++---------------------------------------------+-----------------+
+; Estimated Total logic elements              ; 36              ;
+;                                             ;                 ;
+; Total combinational functions               ; 36              ;
+; Logic element usage by number of LUT inputs ;                 ;
+;     -- 4 input functions                    ; 17              ;
+;     -- 3 input functions                    ; 1               ;
+;     -- <=2 input functions                  ; 18              ;
+;                                             ;                 ;
+; Logic elements by mode                      ;                 ;
+;     -- normal mode                          ; 36              ;
+;     -- arithmetic mode                      ; 0               ;
+;                                             ;                 ;
+; Total registers                             ; 19              ;
+;     -- Dedicated logic registers            ; 19              ;
+;     -- I/O registers                        ; 0               ;
+;                                             ;                 ;
+; I/O pins                                    ; 21              ;
+;                                             ;                 ;
+; Embedded Multiplier 9-bit elements          ; 0               ;
+;                                             ;                 ;
+; Maximum fan-out node                        ; reset_bar~input ;
+; Maximum fan-out                             ; 27              ;
+; Total fan-out                               ; 218             ;
+; Average fan-out                             ; 2.25            ;
++---------------------------------------------+-----------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                    ;
++---------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------+--------------+
+; Compilation Hierarchy Node      ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                       ; Library Name ;
++---------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------+--------------+
+; |AD_SAR                         ; 36 (0)            ; 19 (0)       ; 0           ; 0            ; 0       ; 0         ; 21   ; 0            ; |AD_SAR                                   ; work         ;
+;    |SAR:mySAR|                  ; 28 (8)            ; 19 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AD_SAR|SAR:mySAR                         ; work         ;
+;       |approx_reg:myApprox_reg| ; 8 (8)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AD_SAR|SAR:mySAR|approx_reg:myApprox_reg ; work         ;
+;       |saadc_fsm:mySaadc_fsm|   ; 3 (3)             ; 3 (3)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AD_SAR|SAR:mySAR|saadc_fsm:mySaadc_fsm   ; work         ;
+;       |shiftreg_1:myShiftreg|   ; 9 (9)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AD_SAR|SAR:mySAR|shiftreg_1:myShiftreg   ; work         ;
+;    |latch_1:myLatch|            ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AD_SAR|latch_1:myLatch                   ; work         ;
++---------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------+--------------+
+=======
 Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
 +-------------------------------------+
 ; Parallel Compilation                ;
@@ -207,10 +325,40 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
 ; |saadc_fsm                 ; 3 (3)             ; 3 (3)        ; 0           ; 0            ; 0       ; 0         ; 8    ; 0            ; |saadc_fsm          ; work         ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
+>>>>>>> 8d436a92879aea4afb293f2f7146206db0661194
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
 Encoding Type:  One-Hot
+<<<<<<< HEAD
++---------------------------------------------------------------+
+; State Machine - |AD_SAR|SAR:mySAR|saadc_fsm:mySaadc_fsm|state ;
++---------------+-------------+---------------+-----------------+
+; Name          ; state.shift ; state.initial ; state.idle      ;
++---------------+-------------+---------------+-----------------+
+; state.idle    ; 0           ; 0             ; 0               ;
+; state.initial ; 0           ; 1             ; 1               ;
+; state.shift   ; 1           ; 0             ; 1               ;
++---------------+-------------+---------------+-----------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                                      ;
++----------------------------------------------------+--------------------------------------------+------------------------+
+; Latch Name                                         ; Latch Enable Signal                        ; Free of Timing Hazards ;
++----------------------------------------------------+--------------------------------------------+------------------------+
+; latch_1:myLatch|q[0]                               ; SAR:mySAR|saadc_fsm:mySaadc_fsm|state.idle ; yes                    ;
+; latch_1:myLatch|q[1]                               ; SAR:mySAR|saadc_fsm:mySaadc_fsm|state.idle ; yes                    ;
+; latch_1:myLatch|q[2]                               ; SAR:mySAR|saadc_fsm:mySaadc_fsm|state.idle ; yes                    ;
+; latch_1:myLatch|q[3]                               ; SAR:mySAR|saadc_fsm:mySaadc_fsm|state.idle ; yes                    ;
+; latch_1:myLatch|q[4]                               ; SAR:mySAR|saadc_fsm:mySaadc_fsm|state.idle ; yes                    ;
+; latch_1:myLatch|q[5]                               ; SAR:mySAR|saadc_fsm:mySaadc_fsm|state.idle ; yes                    ;
+; latch_1:myLatch|q[6]                               ; SAR:mySAR|saadc_fsm:mySaadc_fsm|state.idle ; yes                    ;
+; latch_1:myLatch|q[7]                               ; SAR:mySAR|saadc_fsm:mySaadc_fsm|state.idle ; yes                    ;
+; Number of user-specified and inferred latches = 8  ;                                            ;                        ;
++----------------------------------------------------+--------------------------------------------+------------------------+
+Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
+=======
 +----------------------------------------------------------+
 ; State Machine - |saadc_fsm|state                         ;
 +---------------+-------------+---------------+------------+
@@ -220,6 +368,7 @@ Encoding Type:  One-Hot
 ; state.initial ; 0           ; 1             ; 1          ;
 ; state.shift   ; 1           ; 0             ; 1          ;
 +---------------+-------------+---------------+------------+
+>>>>>>> 8d436a92879aea4afb293f2f7146206db0661194
 
 
 +------------------------------------------------------+
@@ -227,21 +376,59 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
+<<<<<<< HEAD
+; Total registers                              ; 19    ;
+; Number of registers using Synchronous Clear  ; 8     ;
+; Number of registers using Synchronous Load   ; 1     ;
+; Number of registers using Asynchronous Clear ; 19    ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 7     ;
+=======
 ; Total registers                              ; 3     ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 3     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 0     ;
+>>>>>>> 8d436a92879aea4afb293f2f7146206db0661194
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
+<<<<<<< HEAD
++------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                             ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                   ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------+
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |AD_SAR|SAR:mySAR|shiftreg_1:myShiftreg|r[0] ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------+
+
+
+=======
+>>>>>>> 8d436a92879aea4afb293f2f7146206db0661194
 +-----------------------------------------------------+
 ; Post-Synthesis Netlist Statistics for Top Partition ;
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
+<<<<<<< HEAD
+; boundary_port         ; 21                          ;
+; cycloneiii_ff         ; 19                          ;
+;     CLR               ; 3                           ;
+;     CLR SCLR          ; 8                           ;
+;     CLR SLD           ; 1                           ;
+;     ENA CLR           ; 7                           ;
+; cycloneiii_lcell_comb ; 37                          ;
+;     normal            ; 37                          ;
+;         1 data inputs ; 1                           ;
+;         2 data inputs ; 18                          ;
+;         3 data inputs ; 1                           ;
+;         4 data inputs ; 17                          ;
+;                       ;                             ;
+; Max LUT depth         ; 2.00                        ;
+; Average LUT depth     ; 1.46                        ;
+=======
 ; boundary_port         ; 8                           ;
 ; cycloneiii_ff         ; 3                           ;
 ;     CLR               ; 3                           ;
@@ -254,6 +441,7 @@ Encoding Type:  One-Hot
 ;                       ;                             ;
 ; Max LUT depth         ; 1.00                        ;
 ; Average LUT depth     ; 0.82                        ;
+>>>>>>> 8d436a92879aea4afb293f2f7146206db0661194
 +-----------------------+-----------------------------+
 
 
@@ -262,7 +450,11 @@ Encoding Type:  One-Hot
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
+<<<<<<< HEAD
+; Top            ; 00:00:00     ;
+=======
 ; Top            ; 00:00:01     ;
+>>>>>>> 8d436a92879aea4afb293f2f7146206db0661194
 +----------------+--------------+
 
 
@@ -271,17 +463,28 @@ Encoding Type:  One-Hot
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
+<<<<<<< HEAD
+    Info: Version 14.1.0 Build 186 12/03/2014 SJ Full Version
+    Info: Processing started: Fri Jun 07 18:13:05 2019
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off shiftreg -c shiftreg
+Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
+=======
     Info: Version 14.1.0 Build 186 12/03/2014 SJ Web Edition
     Info: Processing started: Wed Jun  5 19:21:36 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off shiftreg -c shiftreg
 Warning (20028): Parallel compilation is not licensed and has been disabled
+>>>>>>> 8d436a92879aea4afb293f2f7146206db0661194
 Info (12021): Found 2 design units, including 1 entities, in source file approx_reg.vhd
     Info (12022): Found design unit 1: approx_reg-behavior
     Info (12023): Found entity 1: approx_reg
 Info (12021): Found 2 design units, including 1 entities, in source file saadc_fsm.vhd
     Info (12022): Found design unit 1: saadc_fsm-rtl
     Info (12023): Found entity 1: saadc_fsm
+<<<<<<< HEAD
+Info (12021): Found 2 design units, including 1 entities, in source file sar.vhd
+=======
 Info (12021): Found 2 design units, including 1 entities, in source file SAR.vhd
+>>>>>>> 8d436a92879aea4afb293f2f7146206db0661194
     Info (12022): Found design unit 1: SAR-behavior
     Info (12023): Found entity 1: SAR
 Info (12021): Found 2 design units, including 1 entities, in source file shiftreg_1.vhd
@@ -291,6 +494,39 @@ Info (12021): Found 0 design units, including 0 entities, in source file latch.v
 Info (12021): Found 2 design units, including 1 entities, in source file latch_1.vhd
     Info (12022): Found design unit 1: latch_1-behavior
     Info (12023): Found entity 1: latch_1
+<<<<<<< HEAD
+Info (12021): Found 2 design units, including 1 entities, in source file ad_sar.vhd
+    Info (12022): Found design unit 1: AD_SAR-behavior
+    Info (12023): Found entity 1: AD_SAR
+Info (12127): Elaborating entity "AD_SAR" for the top level hierarchy
+Info (12128): Elaborating entity "SAR" for hierarchy "SAR:mySAR"
+Info (12128): Elaborating entity "saadc_fsm" for hierarchy "SAR:mySAR|saadc_fsm:mySaadc_fsm"
+Info (12128): Elaborating entity "shiftreg_1" for hierarchy "SAR:mySAR|shiftreg_1:myShiftreg"
+Info (12128): Elaborating entity "approx_reg" for hierarchy "SAR:mySAR|approx_reg:myApprox_reg"
+Info (12128): Elaborating entity "latch_1" for hierarchy "latch_1:myLatch"
+Warning (10492): VHDL Process Statement warning at latch_1.vhd(17): signal "d_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10631): VHDL Process Statement warning at latch_1.vhd(12): inferring latch(es) for signal or variable "q", which holds its previous value in one or more paths through the process
+Info (10041): Inferred latch for "q[0]" at latch_1.vhd(12)
+Info (10041): Inferred latch for "q[1]" at latch_1.vhd(12)
+Info (10041): Inferred latch for "q[2]" at latch_1.vhd(12)
+Info (10041): Inferred latch for "q[3]" at latch_1.vhd(12)
+Info (10041): Inferred latch for "q[4]" at latch_1.vhd(12)
+Info (10041): Inferred latch for "q[5]" at latch_1.vhd(12)
+Info (10041): Inferred latch for "q[6]" at latch_1.vhd(12)
+Info (10041): Inferred latch for "q[7]" at latch_1.vhd(12)
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 57 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 4 input pins
+    Info (21059): Implemented 17 output pins
+    Info (21061): Implemented 36 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 2 warnings
+    Info: Peak virtual memory: 4840 megabytes
+    Info: Processing ended: Fri Jun 07 18:13:15 2019
+    Info: Elapsed time: 00:00:10
+    Info: Total CPU time (on all processors): 00:00:21
+=======
 Info (12021): Found 2 design units, including 1 entities, in source file AD_SAR.vhd
     Info (12022): Found design unit 1: AD_SAR-behavior
     Info (12023): Found entity 1: AD_SAR
@@ -307,5 +543,6 @@ Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 1 warning
     Info: Processing ended: Wed Jun  5 19:21:54 2019
     Info: Elapsed time: 00:00:18
     Info: Total CPU time (on all processors): 00:00:45
+>>>>>>> 8d436a92879aea4afb293f2f7146206db0661194
 
 

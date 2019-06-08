@@ -1,14 +1,26 @@
+<<<<<<< HEAD
+Fitter Status : Successful - Fri Jun 07 18:13:23 2019
+Quartus II 64-Bit Version : 14.1.0 Build 186 12/03/2014 SJ Full Version
+=======
 Fitter Status : Successful - Wed Jun  5 19:12:28 2019
 Quartus II 64-Bit Version : 14.1.0 Build 186 12/03/2014 SJ Web Edition
+>>>>>>> 8d436a92879aea4afb293f2f7146206db0661194
 Revision Name : shiftreg
 Top-level Entity Name : AD_SAR
 Family : Cyclone IV E
 Device : EP4CE22F17C6
 Timing Models : Final
+<<<<<<< HEAD
+Total logic elements : 36 / 22,320 ( < 1 % )
+    Total combinational functions : 36 / 22,320 ( < 1 % )
+    Dedicated logic registers : 19 / 22,320 ( < 1 % )
+Total registers : 19
+=======
 Total logic elements : 13 / 22,320 ( < 1 % )
     Total combinational functions : 11 / 22,320 ( < 1 % )
     Dedicated logic registers : 7 / 22,320 ( < 1 % )
 Total registers : 7
+>>>>>>> 8d436a92879aea4afb293f2f7146206db0661194
 Total pins : 21 / 154 ( 14 % )
 Total virtual pins : 0
 Total memory bits : 0 / 608,256 ( 0 % )

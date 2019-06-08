@@ -1,0 +1,557 @@
+$comment
+	File created using the following command:
+		vcd file shiftreg.msim.vcd -direction
+$end
+$date
+	Fri Jun 07 18:17:57 2019
+$end
+$version
+	ModelSim Version 10.3c
+$end
+$timescale
+	1ps
+$end
+
+$scope module AD_SAR_vlg_vec_tst $end
+$var reg 1 ! clk $end
+$var reg 1 " comp_in $end
+$var reg 1 # reset_bar $end
+$var reg 1 $ soc $end
+$var wire 1 % AD_result [7] $end
+$var wire 1 & AD_result [6] $end
+$var wire 1 ' AD_result [5] $end
+$var wire 1 ( AD_result [4] $end
+$var wire 1 ) AD_result [3] $end
+$var wire 1 * AD_result [2] $end
+$var wire 1 + AD_result [1] $end
+$var wire 1 , AD_result [0] $end
+$var wire 1 - digital_out [7] $end
+$var wire 1 . digital_out [6] $end
+$var wire 1 / digital_out [5] $end
+$var wire 1 0 digital_out [4] $end
+$var wire 1 1 digital_out [3] $end
+$var wire 1 2 digital_out [2] $end
+$var wire 1 3 digital_out [1] $end
+$var wire 1 4 digital_out [0] $end
+$var wire 1 5 eoc $end
+$var wire 1 6 sampler $end
+
+$scope module i1 $end
+$var wire 1 7 gnd $end
+$var wire 1 8 vcc $end
+$var wire 1 9 unknown $end
+$var tri1 1 : devclrn $end
+$var tri1 1 ; devpor $end
+$var tri1 1 < devoe $end
+$var wire 1 = eoc~output_o $end
+$var wire 1 > AD_result[0]~output_o $end
+$var wire 1 ? AD_result[1]~output_o $end
+$var wire 1 @ AD_result[2]~output_o $end
+$var wire 1 A AD_result[3]~output_o $end
+$var wire 1 B AD_result[4]~output_o $end
+$var wire 1 C AD_result[5]~output_o $end
+$var wire 1 D AD_result[6]~output_o $end
+$var wire 1 E AD_result[7]~output_o $end
+$var wire 1 F digital_out[0]~output_o $end
+$var wire 1 G digital_out[1]~output_o $end
+$var wire 1 H digital_out[2]~output_o $end
+$var wire 1 I digital_out[3]~output_o $end
+$var wire 1 J digital_out[4]~output_o $end
+$var wire 1 K digital_out[5]~output_o $end
+$var wire 1 L digital_out[6]~output_o $end
+$var wire 1 M digital_out[7]~output_o $end
+$var wire 1 N clk~input_o $end
+$var wire 1 O clk~inputclkctrl_outclk $end
+$var wire 1 P soc~input_o $end
+$var wire 1 Q mySAR|mySaadc_fsm|state~7_combout $end
+$var wire 1 R reset_bar~input_o $end
+$var wire 1 S reset_bar~inputclkctrl_outclk $end
+$var wire 1 T mySAR|mySaadc_fsm|state.initial~q $end
+$var wire 1 U mySAR|mySaadc_fsm|Selector1~0_combout $end
+$var wire 1 V mySAR|mySaadc_fsm|state.shift~q $end
+$var wire 1 W mySAR|myShiftreg|r~8_combout $end
+$var wire 1 X mySAR|myShiftreg|r~7_combout $end
+$var wire 1 Y mySAR|myShiftreg|r[0]~1_combout $end
+$var wire 1 Z mySAR|myShiftreg|r~6_combout $end
+$var wire 1 [ mySAR|myShiftreg|r~5_combout $end
+$var wire 1 \ mySAR|myShiftreg|r~4_combout $end
+$var wire 1 ] mySAR|myShiftreg|r~3_combout $end
+$var wire 1 ^ mySAR|myShiftreg|r~2_combout $end
+$var wire 1 _ mySAR|myShiftreg|r~0_combout $end
+$var wire 1 ` mySAR|mySaadc_fsm|Selector0~0_combout $end
+$var wire 1 a mySAR|mySaadc_fsm|state.idle~q $end
+$var wire 1 b mySAR|mySaadc_fsm|state.idle~clkctrl_outclk $end
+$var wire 1 c comp_in~input_o $end
+$var wire 1 d mySAR|myApprox_reg|r~0_combout $end
+$var wire 1 e mySAR|myApprox_reg|r~1_combout $end
+$var wire 1 f mySAR|myApprox_reg|r~2_combout $end
+$var wire 1 g mySAR|myApprox_reg|r~3_combout $end
+$var wire 1 h mySAR|myApprox_reg|r~4_combout $end
+$var wire 1 i mySAR|myApprox_reg|r~5_combout $end
+$var wire 1 j mySAR|myApprox_reg|r~6_combout $end
+$var wire 1 k mySAR|myApprox_reg|r~7_combout $end
+$var wire 1 l mySAR|or_out_signal [7] $end
+$var wire 1 m mySAR|or_out_signal [6] $end
+$var wire 1 n mySAR|or_out_signal [5] $end
+$var wire 1 o mySAR|or_out_signal [4] $end
+$var wire 1 p mySAR|or_out_signal [3] $end
+$var wire 1 q mySAR|or_out_signal [2] $end
+$var wire 1 r mySAR|or_out_signal [1] $end
+$var wire 1 s mySAR|or_out_signal [0] $end
+$var wire 1 t mySAR|myApprox_reg|r [7] $end
+$var wire 1 u mySAR|myApprox_reg|r [6] $end
+$var wire 1 v mySAR|myApprox_reg|r [5] $end
+$var wire 1 w mySAR|myApprox_reg|r [4] $end
+$var wire 1 x mySAR|myApprox_reg|r [3] $end
+$var wire 1 y mySAR|myApprox_reg|r [2] $end
+$var wire 1 z mySAR|myApprox_reg|r [1] $end
+$var wire 1 { mySAR|myApprox_reg|r [0] $end
+$var wire 1 | mySAR|myShiftreg|r [7] $end
+$var wire 1 } mySAR|myShiftreg|r [6] $end
+$var wire 1 ~ mySAR|myShiftreg|r [5] $end
+$var wire 1 !! mySAR|myShiftreg|r [4] $end
+$var wire 1 "! mySAR|myShiftreg|r [3] $end
+$var wire 1 #! mySAR|myShiftreg|r [2] $end
+$var wire 1 $! mySAR|myShiftreg|r [1] $end
+$var wire 1 %! mySAR|myShiftreg|r [0] $end
+$var wire 1 &! myLatch|q [7] $end
+$var wire 1 '! myLatch|q [6] $end
+$var wire 1 (! myLatch|q [5] $end
+$var wire 1 )! myLatch|q [4] $end
+$var wire 1 *! myLatch|q [3] $end
+$var wire 1 +! myLatch|q [2] $end
+$var wire 1 ,! myLatch|q [1] $end
+$var wire 1 -! myLatch|q [0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+1!
+1"
+1#
+0$
+0,
+0+
+0*
+0)
+0(
+0'
+0&
+0%
+04
+03
+02
+01
+00
+0/
+0.
+0-
+15
+x6
+07
+18
+x9
+1:
+1;
+1<
+1=
+0>
+0?
+0@
+0A
+0B
+0C
+0D
+0E
+0F
+0G
+0H
+0I
+0J
+0K
+0L
+0M
+1N
+1O
+0P
+0Q
+1R
+1S
+0T
+0U
+0V
+0W
+0X
+0Y
+0Z
+0[
+0\
+0]
+0^
+0_
+0`
+0a
+0b
+1c
+0d
+0e
+0f
+0g
+0h
+0i
+0j
+0k
+0s
+0r
+0q
+0p
+0o
+0n
+0m
+0l
+0{
+0z
+0y
+0x
+0w
+0v
+0u
+0t
+0%!
+0$!
+0#!
+0"!
+0!!
+0~
+0}
+0|
+0-!
+0,!
+0+!
+0*!
+0)!
+0(!
+0'!
+0&!
+$end
+#10000
+0!
+0#
+0N
+0R
+0S
+06
+0O
+#40000
+1!
+1N
+16
+1O
+#50000
+1#
+1R
+1S
+06
+#70000
+0!
+0N
+16
+0O
+#90000
+1$
+1P
+06
+1`
+1Q
+#100000
+1!
+1N
+16
+1O
+1a
+1T
+1b
+0=
+0Q
+1Y
+05
+1U
+#110000
+0$
+0P
+06
+#130000
+0!
+0N
+16
+0O
+#160000
+1!
+1N
+06
+1O
+1|
+1V
+0T
+1l
+1k
+1X
+1M
+1-
+#180000
+0"
+0c
+16
+0k
+#190000
+0!
+0N
+06
+0O
+#220000
+1!
+1N
+16
+1O
+1}
+0|
+1m
+1Z
+0l
+0X
+0M
+1L
+0-
+1.
+#240000
+1"
+1c
+06
+1j
+#250000
+0!
+0N
+16
+0O
+#280000
+1!
+1N
+06
+1O
+1u
+1~
+0}
+1n
+1i
+1[
+0Z
+1K
+1/
+#300000
+0"
+0c
+16
+0i
+#310000
+0!
+0N
+06
+0O
+#340000
+1!
+1N
+16
+1O
+1!!
+0~
+1o
+1\
+0n
+0[
+0K
+1J
+0/
+10
+#370000
+0!
+0N
+06
+0O
+#400000
+1!
+1N
+16
+1O
+1"!
+0!!
+1p
+1]
+0o
+0\
+0J
+1I
+00
+11
+#430000
+0!
+0N
+06
+0O
+#460000
+1!
+1N
+16
+1O
+1#!
+0"!
+1q
+1^
+0p
+0]
+0I
+1H
+01
+12
+#490000
+0!
+0N
+06
+0O
+#520000
+1!
+1N
+16
+1O
+1$!
+0#!
+1r
+1_
+0q
+0^
+0H
+1G
+02
+13
+#540000
+1"
+1c
+06
+1e
+#550000
+0!
+0N
+16
+0O
+#580000
+1!
+1N
+06
+1O
+1z
+1%!
+0$!
+0`
+1s
+1d
+0U
+0_
+1F
+14
+#600000
+0"
+0c
+16
+0d
+#610000
+0!
+0N
+06
+0O
+#640000
+1!
+1N
+16
+1O
+0a
+0%!
+0V
+0b
+1=
+0Y
+15
+0s
+1'!
+1,!
+1-!
+1>
+1?
+1D
+0F
+1,
+1+
+1&
+04
+0-!
+0>
+0,
+#670000
+0!
+0N
+06
+0O
+#700000
+1!
+1N
+16
+1O
+#730000
+0!
+0N
+06
+0O
+#760000
+1!
+1N
+16
+1O
+#790000
+0!
+0N
+06
+0O
+#820000
+1!
+1N
+16
+1O
+#840000
+1"
+1c
+06
+#850000
+0!
+0N
+16
+0O
+#880000
+1!
+1N
+06
+1O
+#910000
+0!
+0N
+16
+0O
+#940000
+1!
+1N
+06
+1O
+#970000
+0!
+0N
+16
+0O
+#1000000

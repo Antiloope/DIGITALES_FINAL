@@ -17,7 +17,11 @@ begin
 				if (load = '1') then
 					r := "10000000";
 				elsif (en = '1') then
+<<<<<<< HEAD
+					for i in 1 to 7 loop
+=======
 					for i in 7 downto 1 loop
+>>>>>>> 8d436a92879aea4afb293f2f7146206db0661194
 						r(i-1):=r(i);
 					end loop;
 					r(7) := '0';

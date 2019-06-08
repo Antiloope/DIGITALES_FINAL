@@ -2,6 +2,22 @@
 TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
+<<<<<<< HEAD
+Type  : Slow 1200mV 85C Model Setup 'clk'
+Slack : -1.110
+TNS   : -9.390
+
+Type  : Slow 1200mV 85C Model Setup 'SAR:mySAR|saadc_fsm:mySaadc_fsm|state.idle'
+Slack : -0.709
+TNS   : -4.867
+
+Type  : Slow 1200mV 85C Model Hold 'clk'
+Slack : 0.130
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'SAR:mySAR|saadc_fsm:mySaadc_fsm|state.idle'
+Slack : 0.238
+=======
 Type  : Slow 1200mV 85C Model Setup 'SAR:mySAR|saadc_fsm:mySaadc_fsm|state.idle'
 Slack : -1.211
 TNS   : -2.292
@@ -16,10 +32,33 @@ TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'SAR:mySAR|saadc_fsm:mySaadc_fsm|state.idle'
 Slack : 0.732
+>>>>>>> 8d436a92879aea4afb293f2f7146206db0661194
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk'
 Slack : -3.000
+<<<<<<< HEAD
+TNS   : -22.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'SAR:mySAR|saadc_fsm:mySaadc_fsm|state.idle'
+Slack : 0.409
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'clk'
+Slack : -0.918
+TNS   : -6.588
+
+Type  : Slow 1200mV 0C Model Setup 'SAR:mySAR|saadc_fsm:mySaadc_fsm|state.idle'
+Slack : -0.534
+TNS   : -3.551
+
+Type  : Slow 1200mV 0C Model Hold 'clk'
+Slack : 0.109
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'SAR:mySAR|saadc_fsm:mySaadc_fsm|state.idle'
+Slack : 0.237
+=======
 TNS   : -10.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'SAR:mySAR|saadc_fsm:mySaadc_fsm|state.idle'
@@ -40,10 +79,33 @@ TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'SAR:mySAR|saadc_fsm:mySaadc_fsm|state.idle'
 Slack : 0.703
+>>>>>>> 8d436a92879aea4afb293f2f7146206db0661194
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk'
 Slack : -3.000
+<<<<<<< HEAD
+TNS   : -22.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'SAR:mySAR|saadc_fsm:mySaadc_fsm|state.idle'
+Slack : 0.462
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'clk'
+Slack : -0.137
+TNS   : -0.137
+
+Type  : Fast 1200mV 0C Model Setup 'SAR:mySAR|saadc_fsm:mySaadc_fsm|state.idle'
+Slack : 0.084
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'SAR:mySAR|saadc_fsm:mySaadc_fsm|state.idle'
+Slack : 0.050
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'clk'
+Slack : 0.050
+=======
 TNS   : -10.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'SAR:mySAR|saadc_fsm:mySaadc_fsm|state.idle'
@@ -64,14 +126,22 @@ TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'SAR:mySAR|saadc_fsm:mySaadc_fsm|state.idle'
 Slack : 0.344
+>>>>>>> 8d436a92879aea4afb293f2f7146206db0661194
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk'
 Slack : -3.000
+<<<<<<< HEAD
+TNS   : -23.073
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'SAR:mySAR|saadc_fsm:mySaadc_fsm|state.idle'
+Slack : 0.386
+=======
 TNS   : -10.392
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'SAR:mySAR|saadc_fsm:mySaadc_fsm|state.idle'
 Slack : 0.427
+>>>>>>> 8d436a92879aea4afb293f2f7146206db0661194
 TNS   : 0.000
 
 ------------------------------------------------------------
