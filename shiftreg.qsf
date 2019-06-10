@@ -39,11 +39,7 @@
 
 set_global_assignment -name FAMILY "Cyclone IV E"
 set_global_assignment -name DEVICE EP4CE22F17C6
-<<<<<<< HEAD
-set_global_assignment -name TOP_LEVEL_ENTITY AD_SAR
-=======
 set_global_assignment -name TOP_LEVEL_ENTITY saadc_fsm
->>>>>>> 8d436a92879aea4afb293f2f7146206db0661194
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 14.1.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "15:19:24  MAYO 27, 2019"
 set_global_assignment -name LAST_QUARTUS_VERSION 14.1.0
@@ -68,7 +64,7 @@ set_global_assignment -name VECTOR_WAVEFORM_FILE SAR.vwf
 set_global_assignment -name VHDL_FILE latch.vhd
 set_global_assignment -name VHDL_FILE latch_1.vhd
 set_global_assignment -name VHDL_FILE AD_SAR.vhd
-<<<<<<< HEAD
+
 set_global_assignment -name VECTOR_WAVEFORM_FILE shiftreg_1.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE latch_1.vwf
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
@@ -76,9 +72,4 @@ set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_RO
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
 set_global_assignment -name VECTOR_WAVEFORM_FILE AD_SAR.vwf
-=======
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
-set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
->>>>>>> 8d436a92879aea4afb293f2f7146206db0661194
+
